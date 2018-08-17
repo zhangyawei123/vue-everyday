@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import index from '@/views/index'
 import KeepAlive from '@/views/KeepAlive'
 import AnimateCss from '@/views/AnimateCss'
+import Mock from '@/views/Mock'
 
 Vue.use(Router)
 
@@ -31,6 +32,14 @@ export default new Router({
       component: AnimateCss,
       meta: {
         title: 'AnimateCss'
+      }
+    },
+    {
+      path: '/Mock',
+      name: 'Mock',
+      component: Mock,
+      meta: {
+        title: 'Mock'
       }
     }
   ]
