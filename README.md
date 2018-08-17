@@ -1,4 +1,4 @@
-# vue-eslint
+# vue-eslint -> vue-everyday
 
 > A Vue.js project
 
