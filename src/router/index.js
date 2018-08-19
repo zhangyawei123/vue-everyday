@@ -5,6 +5,7 @@ import index from '@/views/index'
 import KeepAlive from '@/views/KeepAlive'
 import AnimateCss from '@/views/AnimateCss'
 import Mock from '@/views/Mock'
+import BetterScroll from '@/views/BetterScroll'
 
 Vue.use(Router)
 
@@ -23,7 +24,8 @@ export default new Router({
       name: 'KeepAlive',
       component: KeepAlive,
       meta: {
-        title: 'keep-alive'
+        title: 'keep-alive',
+        keepAlive: true
       }
     },
     {
@@ -40,6 +42,14 @@ export default new Router({
       component: Mock,
       meta: {
         title: 'Mock'
+      }
+    },
+    {
+      path: '/BetterScroll',
+      name: 'BetterScroll',
+      component: BetterScroll,
+      meta: {
+        title: 'BetterScroll'
       }
     }
   ]

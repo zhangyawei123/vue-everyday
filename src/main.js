@@ -3,13 +3,19 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import axios from './js/http'
 
 import './assets/reset.css'
 import 'animate.css'
+// 配置饿了么UI
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+// 无限滚动插件
+import infiniteScroll from 'vue-infinite-scroll'
+Vue.use(infiniteScroll)
 
 Vue.config.productionTip = false
+Vue.prototype.$http = axios
 Vue.use(ElementUI)
 
 router.beforeEach((to, from, next) => {

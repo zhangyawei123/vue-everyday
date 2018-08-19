@@ -5,6 +5,7 @@
       <router-link tag="li" to="/keepalive">keepalive状态</router-link>
       <router-link tag="li" to="/AnimateCss">animate</router-link>
       <router-link tag="li" to="/Mock">Mock</router-link>
+      <router-link tag="li" to="/BetterScroll">BetterScroll</router-link>
     </ul>
   </div>
 </template>
@@ -15,5 +16,16 @@ export default {
 </script>
 
 <style scoped>
-
+  h2 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+  }
+  ul li {
+    padding: 10px;
+    background: #f8f8f8;
+    margin: 10px 0;
+    cursor: pointer;
+    color: #00f;
+  }
 </style>
