@@ -3,8 +3,8 @@
       <el-button @click="animaclass=!animaclass">click me</el-button>
       <transition
         name="custom-classes-transition"
-        enter-active-class="animated bounceInRight"
-        leave-active-class="animated bounceOutRight">
+        enter-active-class="animated faster slideInRight"
+        leave-active-class="animated hinge">
         <div v-if="animaclass" class="inner">dlsadjsa</div>
       </transition>
     </div>
