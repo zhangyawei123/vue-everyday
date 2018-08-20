@@ -1,7 +1,12 @@
 <template>
     <div class="container">
-      <div id="demo" class="demo animated" v-bind:class="{flipInX:animaclass }">dlsadjsa</div>
       <el-button @click="animaclass=!animaclass">click me</el-button>
+      <transition
+        name="custom-classes-transition"
+        enter-active-class="animated bounceInRight"
+        leave-active-class="animated bounceOutRight">
+        <div v-if="animaclass" class="inner">dlsadjsa</div>
+      </transition>
     </div>
 </template>
 
@@ -19,17 +24,19 @@ export default {
 </script>
 
 <style scoped>
-  .container {
-    padding-top: 60px;
+  html,body {
+    height: 100%;
   }
-  /*找到对应动画定义的初始状态，设置相反或初始状态的值*/
-  .demo {
-    top: 0;
+  .container {
+    padding: 60px;
+    height: 100%;
+  }
+  .inner {
     position: absolute;
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    /*opacity: 0;*/
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    background-color: #0f0;
   }
 </style>
