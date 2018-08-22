@@ -6,6 +6,7 @@ import KeepAlive from '@/views/KeepAlive'
 import AnimateCss from '@/views/AnimateCss'
 import Mock from '@/views/Mock'
 import BetterScroll from '@/views/BetterScroll'
+import Store from '@/views/Store'
 
 Vue.use(Router)
 
@@ -50,6 +51,14 @@ export default new Router({
       component: BetterScroll,
       meta: {
         title: 'BetterScroll'
+      }
+    },
+    {
+      path: '/Store',
+      name: 'Store',
+      component: Store,
+      meta: {
+        title: 'Store'
       }
     }
   ]

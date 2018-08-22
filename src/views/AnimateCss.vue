@@ -3,9 +3,9 @@
       <el-button @click="animaclass=!animaclass">click me</el-button>
       <transition
         name="custom-classes-transition"
-        enter-active-class="animated faster slideInRight"
-        leave-active-class="animated hinge">
-        <div v-if="animaclass" class="inner">dlsadjsa</div>
+        enter-active-class="animated bounceInRight"
+        leave-active-class="animated bounceOutRight">
+        <div v-if="animaclass" class="inner">这是animate.css实现的css3动画</div>
       </transition>
     </div>
 </template>
@@ -26,6 +26,7 @@ export default {
 <style scoped>
   html,body {
     height: 100%;
+    overflow: hidden;
   }
   .container {
     padding: 60px;
@@ -38,5 +39,6 @@ export default {
     right: 0;
     width: 200px;
     background-color: #0f0;
+    color: #ffff;
   }
 </style>

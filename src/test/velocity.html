@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>velocity</title>
+  <style>
+    .demo {
+      width: 100px;
+      height: 60px;
+      color: aqua;
+      background: #f8f8f8;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <h1>velocity动画</h1>
+  <div class="demo" id="demo">动画开始</div>
+  <button id="btn">clime me</button>
+  <script src="js/jquery-3.2.0.js"></script>
+  <script src="js/velocity-1.5.js"></script>
+  <script src="js/velocity.ui.js"></script>
+  <script>
+    $('#btn').click(function () {
+      $(".demo").velocity('transition.flipXOut', { duration: 650 });
+    })
+
+    
+  </script>
+</body>
+</html>

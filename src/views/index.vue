@@ -6,6 +6,7 @@
       <router-link tag="li" to="/AnimateCss">animate</router-link>
       <router-link tag="li" to="/Mock">Mock</router-link>
       <router-link tag="li" to="/BetterScroll">BetterScroll</router-link>
+      <router-link tag="li" to="/Store">Store</router-link>
     </ul>
   </div>
 </template>
