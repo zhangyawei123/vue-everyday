@@ -7,6 +7,7 @@ import AnimateCss from '@/views/AnimateCss'
 import Mock from '@/views/Mock'
 import BetterScroll from '@/views/BetterScroll'
 import Store from '@/views/Store'
+import test from '@/views/test'
 
 Vue.use(Router)
 
@@ -59,6 +60,14 @@ export default new Router({
       component: Store,
       meta: {
         title: 'Store'
+      }
+    },
+    {
+      path: '/test',
+      name: 'test',
+      component: test,
+      meta: {
+        title: 'test'
       }
     }
   ]
