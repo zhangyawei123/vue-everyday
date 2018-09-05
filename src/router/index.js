@@ -7,6 +7,7 @@ import AnimateCss from '@/views/AnimateCss'
 import Mock from '@/views/Mock'
 import BetterScroll from '@/views/BetterScroll'
 import Store from '@/views/Store'
+import ChildGetAsyncData from '@/views/childGetAsyncData'
 import test from '@/views/test'
 
 Vue.use(Router)
@@ -60,6 +61,14 @@ export default new Router({
       component: Store,
       meta: {
         title: 'Store'
+      }
+    },
+    {
+      path: '/ChildGetAsyncData',
+      name: 'ChildGetAsyncData',
+      component: ChildGetAsyncData,
+      meta: {
+        title: 'ChildGetAsyncData'
       }
     },
     {

@@ -7,6 +7,7 @@
       <router-link tag="li" to="/Mock">Mock</router-link>
       <router-link tag="li" to="/BetterScroll">BetterScroll</router-link>
       <router-link tag="li" to="/Store">Store</router-link>
+      <router-link tag="li" to="/ChildGetAsyncData">子组件异步获取数据</router-link>
       <router-link tag="li" to="/test">test</router-link>
     </ul>
   </div>
